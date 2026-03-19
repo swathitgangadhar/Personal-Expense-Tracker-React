@@ -7,8 +7,32 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Personal expense tracker dashboard built with React and Tailwind CSS"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#eef7ff',
+                100: '#d9ecff',
+                500: '#4f8cff',
+                700: '#2457d6',
+                900: '#102a67'
+              }
+            },
+            boxShadow: {
+              soft: '0 18px 45px -24px rgba(15, 23, 42, 0.35)'
+            },
+            backgroundImage: {
+              'dashboard-grid': 'radial-gradient(circle at top, rgba(79,140,255,0.22), transparent 35%), linear-gradient(135deg, rgba(255,255,255,0.98), rgba(239,246,255,0.94))'
+            }
+          }
+        }
+      }
+    </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
